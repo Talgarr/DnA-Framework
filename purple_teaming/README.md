@@ -24,4 +24,23 @@ How to make something patchable while preventing any functionnality of the thing
 ### Choice
 
 Make a bot using the common functionnality of the service.
-Defining Users. Each users (bot) would do a specific set of action on the platform. Each of them would have multiple flags such as their password, their session cookie, etc.
+Defining Users. Each users (bot) would do a specific set of action on the platform.
+Since a bot is highly custom to the service, we should make a template to make basic action such as connect, click, wait.
+Since bots represents Users, they can be a attack vector such as XXS, Social Engineering (which shouldn't work on bot) and session hijacking.
+
+### Result
+
+If a healthcheck work, nothing happen.
+If a healthcheck doesn't work, a penality is apply to the team. It can be in different form such as points, timeout from the network or other teams, a number of version block from update.
+
+## Log monitoring
+
+Being able to monitor what happens on the platform is important to detect users interaction. Maybe running an elasticsearch server with an agent collection logs from the network.
+
+## Flags
+
+For this mode, the flags are short term variable. On every push, flags can be submitted. A team can't submit there own flag.
+
+## Application
+
+The application will need two part: common and variable short and long term. The common part is everything the every theam has in common such has the application, the system, the database schema, etc. The variable part is everything that changes from team to team. Short term variable change at every push and includes flags, etc. Long term variable doesn't change for the event and includes VPN connections, credentials for known user of the platform and password such as root.
