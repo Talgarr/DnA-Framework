@@ -1,0 +1,6 @@
+[submodule "purple_teaming/DnA-Framework-CTFd"]
+	path = purple_teaming/DnA-Framework-CTFd
+	url = git@github.com:Talgarr/DnA-Framework-CTFd.git
+[submodule "purple_teaming/DnA-Framework-AppTest"]
+	path = purple_teaming/DnA-Framework-AppTest
+	url = git@github.com:Talgarr/DnA-Framework-AppTest.git
