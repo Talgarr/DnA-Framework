@@ -108,4 +108,5 @@ Use [CTFd](https://github.com/CTFd/CTFd).
 ## VPN
 
 Add a wireguard server in a dedicated server for each team: this will be their entrypoint. We will need a service to create those certificates. 
+Make sure to have a way to connect to the VPN. If using auto SERVER\_URL, make sure to forward the port 51820 in the router.
 
